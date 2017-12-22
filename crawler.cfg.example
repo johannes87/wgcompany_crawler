@@ -1,0 +1,29 @@
+[smtp]
+# Hostname of the SMTP server
+host=smtp.foobar.invalid
+# SMTP port
+port=587
+# SMTP username
+username=mymail@foobar.invalid
+# SMTP password
+password=quxbaz
+# Whether to use TLS encryption (True) or not (False)
+use_tls=True
+
+[mail]
+# 'From' header, what gets displayed in your mail program. Put the
+# email address of the account you configured in [smtp] between the < >
+# brackets
+from='WGcompany <mymail@foobar.invalid>'
+# Where to send the emails to.  
+# Multiple recipients can be separated with a ","
+recipients='somerecipient@barfoo.com, anotherone@quxbaz.org'
+# The subject of the notification email, {flatshare_name} will be
+# replaced with the name of the flatshare
+subject='WGcompany: found flatshare: {flatshare_name}'
+
+[person]
+# Your age. In years.
+age=30
+# Your gender. 'm' for male, 'f' for female, '' for non-specified
+gender='m'
